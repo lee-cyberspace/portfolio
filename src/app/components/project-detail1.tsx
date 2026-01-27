@@ -29,7 +29,7 @@ export function ProjectDetail1() {
               <div><p className="text-[10px] text-gray-400 uppercase font-black mb-2 tracking-widest">Period</p><p className="font-bold">24.08 ~ 25.01</p></div>
               <div><p className="text-[10px] text-gray-400 uppercase font-black mb-2 tracking-widest">Role</p><p className="font-bold">기획 PL 100%</p></div>
               <div className="col-span-1"><p className="text-[10px] text-gray-400 uppercase font-black mb-2 tracking-widest">Collab</p><p className="font-bold text-sm whitespace-pre-line">고객사, 디자인 및 개발자 협업</p></div>
-              <div className="bg-yellow-400 p-4 rounded-sm"><p className="text-[10px] text-black uppercase font-black mb-1">Goal</p><p className="font-bold text-sm leading-tight">새로운 비전, 미션을 토대로 디지털 브랜딩 리뉴얼</p></div>
+              <div className="bg-yellow-400 p-4 rounded-sm"><p className="text-[10px] text-black uppercase font-black mb-1">Goal</p><p className="font-bold text-sm leading-tight">새로운 브랜드 비전을 반영한 웹사이트 리뉴얼</p></div>
             </div>
           </div>
         </section>
@@ -77,7 +77,7 @@ export function ProjectDetail1() {
                 <div className="absolute inset-0 bg-orange-300 blur-xl opacity-20 -z-10"></div>
               </div>
               <div className="max-w-3xl mt-8 text-gray-600 leading-relaxed font-medium text-lg">
-                단편적인 기업 정보의 단순 나열에서 벗어나, 브랜드의 비전과 지향점이 사용자에게 자연스럽게 전달되는 <br />
+                단편적인 기업 정보의 단순 나열에서 벗어나, 브랜드의 비전과 지향점이 사용자에게 자연스럽게 전달되는
                 <span className="text-black font-bold border-b-2 border-blue-600">‘스토리텔링형 정보 구조’</span>를 설계하는데 집중했습니다.
               </div>
             </div>
@@ -85,7 +85,7 @@ export function ProjectDetail1() {
             <div className="grid md:grid-cols-2 gap-10 mb-20">
               <div className="group">
                 <div className="flex items-center gap-2 mb-4">
-                  <span className="px-3 py-1 bg-gray-200 text-gray-600 text-[11px] font-black rounded uppercase">As-Is</span>
+                  <span className="whitespace-nowrap px-3 py-1 bg-gray-200 text-gray-600 text-[11px] font-black rounded uppercase">As-Is</span>
                   <h4 className="font-bold text-gray-500 tracking-tight">한정된 유저에게 일회적, 획일화된 정보만을 제공하는 구조</h4>
                 </div>
                 <div className="relative aspect-[16/10] bg-gray-100 rounded-2xl overflow-hidden border border-gray-200 grayscale hover:grayscale-0 transition-all duration-700 shadow-inner">
@@ -94,7 +94,7 @@ export function ProjectDetail1() {
               </div>
               <div className="group">
                 <div className="flex items-center gap-2 mb-4">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-600 text-[11px] font-black rounded uppercase">To-Be</span>
+                  <span className="whitespace-nowrap px-3 py-1 bg-blue-100 text-blue-600 text-[11px] font-black rounded uppercase">To-Be</span>
                   <h4 className="font-bold text-black tracking-tight">기업의 아이덴티티를 투영한 새로운 IA 체계 수립</h4>
                 </div>
                 <div className="relative aspect-[16/10] bg-white rounded-2xl overflow-hidden border-[3px] border-blue-600 shadow-[0_20px_50px_rgba(234,179,8,0.15)] transition-transform duration-500 group-hover:-translate-y-2">
@@ -283,7 +283,7 @@ export function ProjectDetail1() {
               {/* 왼쪽: 기획문서 설명 */}
               <div className="space-y-6">
                 <h4 className="text-3xl md:text-4xl font-black text-zinc-900 leading-tight">
-                  구축 단계별 표준 산출물 작성 및 <br/> 안정적 오픈 기반 마련
+                  구축 단계별 표준 산출물 작성 <br/>안정적 오픈 기반 마련
                 </h4>
                 <p className="text-zinc-500 text-lg leading-relaxed">
                 프로젝트의 시작부터 종료까지 <strong>기획 단계별 필수 산출물을 꼼꼼하게 작성</strong>하여 원활한 협업 환경을 조성했습니다. 
@@ -343,7 +343,7 @@ export function ProjectDetail1() {
         <section className="px-6 py-32 bg-white text-center">
           <Link to="/project/2" className="group inline-flex flex-col items-center">
             <span className="text-gray-400 font-bold text-sm mb-4 uppercase tracking-widest">다음 프로젝트</span>
-            <span className="text-3xl font-black text-black group-hover:text-yellow-400 transition-colors italic">B2B 제조기업 리브랜딩&리뉴얼 →</span>
+            <span className="text-3xl font-black text-black group-hover:text-yellow-400 transition-colors italic">B2B 제조기업 리뉴얼 →</span>
           </Link>
         </section>
       </div>

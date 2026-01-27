@@ -79,34 +79,39 @@ export function ProjectDetail2() {
       </p>
     </div>
 
-    {/* 하단: 픽토그램 기반 타겟 인포그래픽 (4컬럼 그리드) */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
- <div className="max-w-6xl mx-auto px-6">
-            <div className="mb-16">
-              <span className="text-blue-600 font-bold text-sm tracking-widest uppercase block mb-2">STEP 02</span>
-              <h2 className="text-3xl md:text-5xl font-black text-black leading-tight tracking-tighter break-keep">
-                사용자 그룹 및 니즈 재정의
-              </h2>
-            </div>
-
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-              {[
-                { emoji: "🤝", title: "구매/거래처", desc: "기술 사양과 신뢰도" },
-                { emoji: "🎯", title: "잠재고객/대중", desc: "친근한 브랜드 경험" },
-                { emoji: "📈", title: "투자자/파트너", desc: "ESG 경영 및 비전" },
-                { emoji: "👨‍💻", title: "미래 인재", desc: "기업 문화 리서치" }
-              ].map((item, idx) => (
-                <div key={idx} className="bg-zinc-50 p-6 md:p-10 rounded-2xl border border-zinc-100 flex flex-col items-center text-center group hover:bg-blue-50 transition-all">
-                  <div className="w-12 h-12 md:w-20 md:h-20 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <span className="text-2xl md:text-4xl">{item.emoji}</span>
-                  </div>
-                  <h4 className="text-sm md:text-lg font-black text-zinc-900 mb-2">{item.title}</h4>
-                  <p className="text-[10px] md:text-sm text-zinc-500 leading-tight break-keep">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-            </div>
+   {/* 섹션 전체 컨테이너: 최대 너비와 중앙 정렬 */}
+<div className="max-w-6xl mx-auto px-6 py-12">
+  
+  {/* 하단: 픽토그램 기반 타겟 인포그래픽 (반응형 그리드) */}
+  <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+    {[
+      { emoji: "🤝", title: "구매/거래처", desc: "기술 사양과 신뢰도" },
+      { emoji: "🎯", title: "잠재고객/대중", desc: "친근한 브랜드 경험" },
+      { emoji: "📈", title: "투자자/파트너", desc: "ESG 경영 및 비전" },
+      { emoji: "👨‍💻", title: "미래 인재", desc: "기업 문화 리서치" }
+    ].map((item, idx) => (
+      <div 
+        key={idx} 
+        className="bg-zinc-50 p-6 md:p-10 rounded-2xl border border-zinc-100 flex flex-col items-center text-center group hover:bg-blue-50 transition-all"
+      >
+        {/* 이모지 박스 */}
+        <div className="w-12 h-12 md:w-20 md:h-20 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+          <span className="text-2xl md:text-4xl">{item.emoji}</span>
+        </div>
+        
+        {/* 타이틀 */}
+        <h4 className="text-sm md:text-lg font-black text-zinc-900 mb-2">
+          {item.title}
+        </h4>
+        
+        {/* 설명 */}
+        <p className="text-[10px] md:text-sm text-zinc-500 leading-tight break-keep">
+          {item.desc}
+        </p>
+      </div>
+    ))}
+  </div>
+</div>
 
     {/* 추가된 연결 요소: 화살표 및 안내 문구 */}
     <div className="py-16 flex flex-col items-center">
@@ -259,15 +264,15 @@ export function ProjectDetail2() {
         </p>
         <ul className="space-y-4 text-sm text-zinc-600">
           <li className="flex gap-3">
-            <span className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold">01</span>
+            <span className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold">01</span>
             <span>브랜드 메시지와 연계된 <strong>소비재 이미지</strong>를 전면에 배치하여 진입장벽을 완화했습니다.</span>
           </li>
           <li className="flex gap-3">
-            <span className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold">02</span>
+            <span className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold">02</span>
             <span>탐색 과정에서 <strong>실제 부품의 기술력과 연결</strong>되는 스토리텔링 플로우를 구성했습니다.</span>
           </li>
           <li className="flex gap-3">
-           <span className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold">03</span>
+           <span className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold">03</span>
             <span>상세 페이지에서 전문 실사를 노출하여 <strong>B2B 신뢰도</strong>를 확보했습니다.</span>
           </li>
         </ul>
@@ -281,7 +286,7 @@ export function ProjectDetail2() {
 <p className="text-gray-600 leading-relaxed">
     파편화된 기술 용어를 전문가와 비전문가 모두 공감할 수 있는 <strong>'일상의 언어'로 재설계</strong>했습니다. <br className="hidden md:block" />
     내러티브가 가미된 텍스트와 <strong>직관적 아이콘 시스템</strong>을 도입하여 <br className="hidden md:block" />
-    정보 습득 시 발생하는 사용자의 인지 부하를 최소화하는 데 집중했습니다.
+    정보 습득 시 발생하는 사용자의 인지 부하를 최소화하는데 집중했습니다.
         </p>
       </div>
       
@@ -309,9 +314,9 @@ export function ProjectDetail2() {
           </h4>
 
           <ul className="mb-8 space-y-3 text-blue-50/80 text-sm">
-            <li className="flex gap-2"><span>•</span> <strong>고강성·고광택 레진</strong> 제품군 특화 설계</li>
-            <li className="flex gap-2"><span>•</span> 내마모성 강화 소재로 <strong>사출 트러블 최소화</strong></li>
-            <li className="flex gap-2"><span>•</span> <strong>정밀 근접 냉각</strong>이 가능한 최소 직경 설계</li>
+            <li className="flex gap-2"><span>•</span><strong>고강성·고광택 레진</strong> 제품군 특화 설계</li>
+            <li className="flex gap-2"><span>•</span> 내마모성 강화 소재로<strong>사출 트러블 최소화</strong></li>
+            <li className="flex gap-2"><span>•</span><strong>정밀 근접 냉각</strong>이 가능한 최소 직경 설계</li>
           </ul>
 
           {/* 간소화된 아이콘 영역 */}
@@ -334,11 +339,11 @@ export function ProjectDetail2() {
       <div className="space-y-6">
         <h4 className="text-3xl md:text-4xl font-black text-zinc-900 leading-tight">
           전략 수립부터 운영 이행까지,<br/>
-          프로젝트 전 과정을 책임지는 올라운더
+          프로젝트 전 과정을 책임
         </h4>
         <p className="text-zinc-500 text-lg leading-relaxed">
           단순 기획을 넘어 <strong>PM으로서 일정 수립 및 리스크 관리 등 프로젝트 전반을 매니징</strong>했습니다. 
-          디자인·개발 파트와의 유기적인 협업 리딩은 물론, UI 기획부터 오픈 후 교육까지 <strong>기획 실무 전 과정을 1인 책임 전담</strong>하며 높은 산출물 퀄리티를 확보했습니다.
+          디자인·개발 파트와의 유기적인 협업 리딩은 물론, UI 기획부터 오픈 후 교육까지 <strong>기획 실무와 프로젝트 마무리까지 전담</strong>했습니다.
         </p>
         <div className="flex flex-wrap gap-2 pt-2">
           {["프로젝트 관리(WBS)", "IA 정의", "사용자 흐름(User Flow)", "상세 화면설계", "QA 체크리스트", "운영 가이드"].map(tag => (
