@@ -44,7 +44,7 @@ export function CareerPage() {
           tasks: [
             "리뉴얼 컨셉 기획",
             "정보구조 설계",
-            { text: "프론트 화면설계", hasSample: true, sampleUrl: "https://buly.kr/FWUKQNy" },
+            { text: "프론트 화면설계", hasSample: true, sampleUrl: "https://buly.kr/APwTEk6" },
             "백오피스 어드민 화면설계",
             "통합 Test case 작성",
             "오픈 시나리오 작성 및 런칭",
