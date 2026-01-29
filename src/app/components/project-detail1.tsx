@@ -205,7 +205,7 @@ export function ProjectDetail1() {
       <span className="text-blue-600 font-bold text-sm tracking-widest uppercase block mb-2">STEP 04</span>
       <h2 className="text-3xl md:text-5xl font-black text-black mb-6">전략적 비주얼 큐레이션 및 퀄리티 컨트롤</h2>
       <p className="max-w-3xl text-gray-600 text-lg leading-relaxed break-keep">
-        디자인 컨셉의 방향성을  <strong>전체 기획 전략에 부합하는 최적의 비주얼을 선별하고 고도화</strong>하는 데 집중했습니다.
+        디자인 컨셉의 방향성을  <strong>전체 기획 전략에 부합하는 최적의 비주얼을 선별하고 고도화</strong>하는데 집중했습니다.
         단순한 컨펌을 넘어, 브랜드의 미래지향적 가치가 모든 이미지 요소에 녹아들 수 있도록 밀착 가이드를 제공하여 산출물의 완성도를 확보했습니다.
       </p>
     </div>

@@ -63,8 +63,7 @@ return (
             커리어
           </h2>
           <p className="text-xl md:text-2xl text-gray-300 leading-relaxed font-bold">
-            교육 도메인은 물론 다양한 비즈니스의 전문적인 경험을 쌓을 수 있는<br className="hidden md:block" />
-             서비스를 구축하고 운영했습니다.
+            교육 도메인은 물론 다양한 비즈니스의 전문적인 경험을 쌓을 수 있는<br className="hidden md:block" />{" "}서비스를 구축하고 운영했습니다.
           </p>
           {/* Projects 섹션의 노란 선과 일관성을 위해 추가 (선택사항) */}
           <div className="w-16 h-1.5 bg-yellow-400 mt-6"></div>

@@ -30,32 +30,35 @@ const projects = [
 
 function ProjectCard({ project }: { project: typeof projects[0] }) {
   return (
-    /* 개별 섹션에서 px-6 중복 제거하여 부모의 max-w-5xl 라인에 밀착 */
-    <div className="w-full py-10">
+    <div className="w-full py-6 md:py-10">
       <Link to={`/project/${project.id}`}>
-        <div className="relative aspect-[16/10] md:aspect-video overflow-hidden bg-gray-900 group cursor-pointer border border-white/10">
-          <ImageWithFallback
-            src={project.image}
-            alt={project.title}
-            className="w-full h-full object-cover transition-all duration-700 blur-sm group-hover:blur-none group-hover:scale-105"
-          />
+        <div className="flex flex-col md:relative overflow-hidden bg-zinc-900 group cursor-pointer border border-white/10 rounded-xl md:rounded-none">
+          
+       
+          <div className="w-full h-[60vh] md:h-full md:aspect-video overflow-hidden">
+            <ImageWithFallback
+              src={project.image}
+              alt={project.title}
+              className="w-full h-full object-cover transition-all duration-700 blur-[2px] md:blur-sm group-hover:blur-none group-hover:scale-105"
+            />
+          </div>
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent flex flex-col justify-end p-8">
-            <p className="text-sm md:text-base text-yellow-400 mb-3 font-medium">
+         
+          <div className="relative md:absolute md:inset-0 z-10 bg-zinc-900 md:bg-transparent md:bg-gradient-to-t md:from-black/95 md:via-black/40 md:to-transparent flex flex-col justify-end p-6 md:p-8">
+            <p className="text-sm md:text-base text-yellow-400 mb-2 md:mb-3 font-medium">
               {project.subtitle}
             </p>
-            <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            <h3 className="text-2xl md:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
               {project.title}
             </h3>
-            <div className="flex flex-row gap-6 text-gray-400 text-sm md:text-base border-t border-white/20 pt-4">
+            <div className="flex flex-row gap-4 md:gap-6 text-gray-400 text-xs md:text-base border-t border-white/20 pt-4">
               <span>{project.period}</span>
               {project.role && (
-                <span className="text-yellow-400 font-bold">
-                  {project.role}
-                </span>
+                <span className="text-yellow-400 font-bold">{project.role}</span>
               )}
             </div>
           </div>
+
         </div>
       </Link>
     </div>
